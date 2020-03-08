@@ -1,0 +1,18 @@
+server:
+  port: 8082
+spring:
+  cloud:
+    nacos:
+      discovery:
+        server-addr: 127.0.0.1:8848
+  datasource:
+    url: jdbc:mysql://localhost:3306/guli_ums?serverTimezone=GMT%2B8
+    username: root
+    password: root
+  redis:
+    host:192.168.188.131
+mybatis-plus:
+  global-config:
+    db-config:
+      id-type: auto
+  mapper-locations: classpath*:/mapper/ums/**/*.xml
